@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 /* BEM */
 
 
@@ -39,12 +43,49 @@
     background-color: red;
 }
 /* MODAL BOX */
-.modal{
+/* .modal{
     position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(red, green, blue, 0.5);
+    background-color: rgba(0,0,0,0.5);
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal__content-box{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow: auto;
+} */
+
+/* GRID */
+.grid{
+    outline: 1px dashed red;
+    margin: 50px 10px;
+    gap: 20px;
+}
+
+.grid__article{
+    background-color: tomato;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+/* GRID - using FLEX */
+
+.grid--using-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__article{
+    width: calc((100% - 40px) / 3);
 }
