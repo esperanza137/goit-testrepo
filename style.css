@@ -1,0 +1,50 @@
+/* BEM */
+
+
+/* BLOCK */
+.social-media{
+    background-color: aliceblue;
+    list-style: none;
+    margin: 50px;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid coral;
+    border-radius: 5px;
+}
+
+/* ELEMENT */
+.social-media__item{
+    padding: 3px 10px;
+    border: 1px solid coral;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MODIFIRES */
+.social-media__item--facebook{
+    background-color: darkblue;
+    color: white;
+}
+
+.social-media__item--twitter{
+    background-color: cornflowerblue;
+}
+
+.social-media__item--instagram{
+    background-color: yellow;
+}
+
+.social-media__item--youtube{
+    background-color: red;
+}
+/* MODAL BOX */
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(red, green, blue, 0.5);
+    z-index: 100;
+}
