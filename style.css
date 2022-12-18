@@ -87,5 +87,38 @@
 }
 
 .grid__article{
-    width: calc((100% - 40px) / 3);
+    /* width: calc((100% - 40px) / 3); */
+    width: 100%;
+}
+
+/* @media screen and (min-width: 580px) {
+
+    .grid__article {
+        width: calc((100% - 20px)/2)
+        }}
+
+@media screen and (min-width: 768px) {
+ 
+    .grid__article {
+        width: calc((100% - 40px)/3)
+        }}
+
+@media screen and (min-width: 1024px) {
+
+    .grid__article {
+        width: calc((100% - 60px)/4)
+        }} 
+*/
+
+        /* USING CSS GRID  - używanie flexa tylko na klasie z modyfier*/
+.grid--using-cssgrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 580px) {
+    .grid--using-cssgrid{
+        grid-template-columns: 1fr 1fr;
+    }
 }
