@@ -122,3 +122,23 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+.grid-general{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    outline: 2px dashed red;
+    gap: 20px;
+}
+
+.grid-general div{
+    background-color: greenyellow;
+    padding: 20px;
+}
+
+.grid-general div:nth-child(1){
+    grid-column: 1 / 3;
+}
+
+.grid-general div:nth-child(2){
+    grid-row: 2 / 3;
+}
